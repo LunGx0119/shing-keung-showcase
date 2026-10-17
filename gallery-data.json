@@ -1,0 +1,377 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "living",
+      "label": "客廳"
+    },
+    {
+      "id": "dining",
+      "label": "飯廳"
+    },
+    {
+      "id": "bedroom",
+      "label": "睡房"
+    },
+    {
+      "id": "kitchen",
+      "label": "廚房"
+    },
+    {
+      "id": "bath",
+      "label": "浴室"
+    },
+    {
+      "id": "storage",
+      "label": "收納"
+    },
+    {
+      "id": "detail",
+      "label": "細節"
+    }
+  ],
+  "items": [
+    {
+      "src": "assets/wood-kitchen.webp",
+      "thumbnail": "assets/wood-kitchen-small.webp",
+      "category": "kitchen",
+      "alt": "木紋開放式廚房",
+      "title": "木紋開放式廚房",
+      "caption": "木紋櫃面、開放式枱面與天花燈槽的實際相片。",
+      "width": 1440,
+      "height": 1920,
+      "origin": "existing"
+    },
+    {
+      "src": "assets/wood-storage.webp",
+      "thumbnail": "assets/wood-storage-small.webp",
+      "category": "storage",
+      "alt": "木紋燈格高櫃",
+      "title": "木紋燈格高櫃",
+      "caption": "高櫃結合開放燈格與下方抽屜。",
+      "width": 1440,
+      "height": 1920,
+      "origin": "existing"
+    },
+    {
+      "src": "assets/timber-doors.webp",
+      "thumbnail": "assets/timber-doors-small.webp",
+      "category": "living",
+      "alt": "黑框木紋門與走廊",
+      "title": "黑框木紋門與走廊",
+      "caption": "黑框木紋門、地板與燈槽的實際配置。",
+      "width": 1440,
+      "height": 1920,
+      "origin": "existing"
+    },
+    {
+      "src": "assets/white-open-kitchen.webp",
+      "thumbnail": "assets/white-open-kitchen-small.webp",
+      "category": "kitchen",
+      "alt": "白色開放式廚櫃",
+      "title": "白色開放式廚櫃",
+      "caption": "白色廚櫃配淺木色地板。",
+      "width": 720,
+      "height": 960,
+      "origin": "existing"
+    },
+    {
+      "src": "assets/pink-child-room.webp",
+      "thumbnail": "assets/pink-child-room-small.webp",
+      "category": "bedroom",
+      "alt": "粉色兒童房",
+      "title": "粉色兒童房",
+      "caption": "粉色床櫃與上方開放層架。",
+      "width": 1440,
+      "height": 1920,
+      "origin": "existing"
+    },
+    {
+      "src": "assets/bedroom-desk.webp",
+      "thumbnail": "assets/bedroom-desk-small.webp",
+      "category": "bedroom",
+      "alt": "床邊書檯與高櫃",
+      "title": "床邊書檯與高櫃",
+      "caption": "淺木色書檯、白色抽屜和床邊收納。",
+      "width": 1440,
+      "height": 1920,
+      "origin": "existing"
+    },
+    {
+      "src": "assets/gray-l-kitchen.webp",
+      "thumbnail": "assets/gray-l-kitchen-small.webp",
+      "category": "kitchen",
+      "alt": "灰白L形廚房",
+      "title": "灰白L形廚房",
+      "caption": "灰白廚櫃、轉角枱面與黑框玻璃門。",
+      "width": 1024,
+      "height": 768,
+      "origin": "existing"
+    },
+    {
+      "src": "assets/black-marble-bath.webp",
+      "thumbnail": "assets/black-marble-bath-small.webp",
+      "category": "bath",
+      "alt": "深色石紋浴室",
+      "title": "深色石紋浴室",
+      "caption": "深色石紋牆面、浴缸與潔具配置。",
+      "width": 1024,
+      "height": 768,
+      "origin": "existing"
+    },
+    {
+      "src": "assets/gray-shower-bath.webp",
+      "thumbnail": "assets/gray-shower-bath-small.webp",
+      "category": "bath",
+      "alt": "淺灰石紋浴室",
+      "title": "淺灰石紋浴室",
+      "caption": "淺灰石紋、玻璃淋浴間與洗手盆。",
+      "width": 1079,
+      "height": 1438,
+      "origin": "existing"
+    },
+    {
+      "src": "assets/platform-bed.webp",
+      "thumbnail": "assets/platform-bed-small.webp",
+      "category": "bedroom",
+      "alt": "木紋地台床",
+      "title": "木紋地台床",
+      "caption": "床板、床頭燈帶與圓角地台。",
+      "width": 1079,
+      "height": 1434,
+      "origin": "existing"
+    },
+    {
+      "src": "assets/gallery/gallery-living-491401474.png",
+      "category": "living",
+      "alt": "暖白色客廳、電視牆與梳化背櫃",
+      "title": "暖白色客廳、電視牆與梳化背櫃",
+      "caption": "暖白色客廳、電視牆與梳化背櫃",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-living-491964535.png",
+      "category": "living",
+      "alt": "電視牆、直紋飾面與玻璃展示櫃",
+      "title": "電視牆、直紋飾面與玻璃展示櫃",
+      "caption": "電視牆、直紋飾面與玻璃展示櫃",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-living-491936105.png",
+      "category": "living",
+      "alt": "灰色客廳牆身與弧形燈槽",
+      "title": "灰色客廳牆身與弧形燈槽",
+      "caption": "灰色客廳牆身與弧形燈槽",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-living-491970607.png",
+      "category": "living",
+      "alt": "深淺配色電視牆與懸空地櫃",
+      "title": "深淺配色電視牆與懸空地櫃",
+      "caption": "深淺配色電視牆與懸空地櫃",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-living-486611779.png",
+      "category": "living",
+      "alt": "木紋直條電視牆與窗邊座位",
+      "title": "木紋直條電視牆與窗邊座位",
+      "caption": "木紋直條電視牆與窗邊座位",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-dining-491817848.png",
+      "category": "dining",
+      "alt": "餐桌旁的暖白色餐邊櫃與展示格",
+      "title": "餐桌旁的暖白色餐邊櫃與展示格",
+      "caption": "餐桌旁的暖白色餐邊櫃與展示格",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-dining-491840591.png",
+      "category": "dining",
+      "alt": "餐桌與客廳之間的矮身分隔櫃",
+      "title": "餐桌與客廳之間的矮身分隔櫃",
+      "caption": "餐桌與客廳之間的矮身分隔櫃",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-dining-486959982.png",
+      "category": "dining",
+      "alt": "玻璃門旁的餐邊櫃與燈帶",
+      "title": "玻璃門旁的餐邊櫃與燈帶",
+      "caption": "玻璃門旁的餐邊櫃與燈帶",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-dining-487180146.png",
+      "category": "dining",
+      "alt": "圓角餐邊櫃與相連的電視牆",
+      "title": "圓角餐邊櫃與相連的電視牆",
+      "caption": "圓角餐邊櫃與相連的電視牆",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-bedroom-487978628.png",
+      "category": "bedroom",
+      "alt": "小房間床台、書桌與玻璃吊櫃",
+      "title": "小房間床台、書桌與玻璃吊櫃",
+      "caption": "小房間床台、書桌與玻璃吊櫃",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-bedroom-487526142.png",
+      "category": "bedroom",
+      "alt": "窗邊床台、書桌與側面衣櫃",
+      "title": "窗邊床台、書桌與側面衣櫃",
+      "caption": "窗邊床台、書桌與側面衣櫃",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-bedroom-486612754.png",
+      "category": "bedroom",
+      "alt": "窗邊床架及相連梳妝枱",
+      "title": "窗邊床架及相連梳妝枱",
+      "caption": "窗邊床架及相連梳妝枱",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-kitchen-487460980.png",
+      "category": "kitchen",
+      "alt": "玻璃趟門外望白色廚房與工作枱",
+      "title": "玻璃趟門外望白色廚房與工作枱",
+      "caption": "玻璃趟門外望白色廚房與工作枱",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-kitchen-487494201.png",
+      "category": "kitchen",
+      "alt": "白色廚房的爐頭、焗爐與水槽",
+      "title": "白色廚房的爐頭、焗爐與水槽",
+      "caption": "白色廚房的爐頭、焗爐與水槽",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-kitchen-487419280.png",
+      "category": "kitchen",
+      "alt": "木紋廚櫃、焗爐與洗衣機",
+      "title": "木紋廚櫃、焗爐與洗衣機",
+      "caption": "木紋廚櫃、焗爐與洗衣機",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-kitchen-487381737.png",
+      "category": "kitchen",
+      "alt": "廚房水槽、黑色龍頭與有燈玻璃吊櫃",
+      "title": "廚房水槽、黑色龍頭與有燈玻璃吊櫃",
+      "caption": "廚房水槽、黑色龍頭與有燈玻璃吊櫃",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-bath-486609557.png",
+      "category": "bath",
+      "alt": "浴室長身洗手枱、木紋地櫃及鏡櫃",
+      "title": "浴室長身洗手枱、木紋地櫃及鏡櫃",
+      "caption": "浴室長身洗手枱、木紋地櫃及鏡櫃",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-bath-487343428.png",
+      "category": "bath",
+      "alt": "浴室長洗手枱、鏡櫃與座廁",
+      "title": "浴室長洗手枱、鏡櫃與座廁",
+      "caption": "浴室長洗手枱、鏡櫃與座廁",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-bath-487395264.png",
+      "category": "bath",
+      "alt": "浴室窄身洗手櫃、鏡櫃與座廁",
+      "title": "浴室窄身洗手櫃、鏡櫃與座廁",
+      "caption": "浴室窄身洗手櫃、鏡櫃與座廁",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-storage-492061310.png",
+      "category": "storage",
+      "alt": "黑框玻璃展示櫃與相連工作枱",
+      "title": "黑框玻璃展示櫃與相連工作枱",
+      "caption": "黑框玻璃展示櫃與相連工作枱",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-storage-487756935.png",
+      "category": "storage",
+      "alt": "玄關鞋櫃、座位及旁邊高櫃",
+      "title": "玄關鞋櫃、座位及旁邊高櫃",
+      "caption": "玄關鞋櫃、座位及旁邊高櫃",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-storage-486608922.png",
+      "category": "storage",
+      "alt": "洗衣乾衣機疊放與上方儲物櫃",
+      "title": "洗衣乾衣機疊放與上方儲物櫃",
+      "caption": "洗衣乾衣機疊放與上方儲物櫃",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-storage-487374733.png",
+      "category": "storage",
+      "alt": "轉角高身儲物櫃與有燈置物格",
+      "title": "轉角高身儲物櫃與有燈置物格",
+      "caption": "轉角高身儲物櫃與有燈置物格",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-storage-487675792.png",
+      "category": "storage",
+      "alt": "睡房到頂衣櫃與窗邊書桌",
+      "title": "睡房到頂衣櫃與窗邊書桌",
+      "caption": "睡房到頂衣櫃與窗邊書桌",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-storage-486989503.png",
+      "category": "storage",
+      "alt": "轉角書桌與到頂衣櫃",
+      "title": "轉角書桌與到頂衣櫃",
+      "caption": "轉角書桌與到頂衣櫃",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-detail-487827828.png",
+      "category": "detail",
+      "alt": "走廊天花線性燈與櫃門細節",
+      "title": "走廊天花線性燈與櫃門細節",
+      "caption": "走廊天花線性燈與櫃門細節",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-detail-488042600.png",
+      "category": "detail",
+      "alt": "內置燈帶的玻璃展示櫃",
+      "title": "內置燈帶的玻璃展示櫃",
+      "caption": "內置燈帶的玻璃展示櫃",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-detail-486612969.png",
+      "category": "detail",
+      "alt": "床邊枱的圓角枱面及床頭軟墊",
+      "title": "床邊枱的圓角枱面及床頭軟墊",
+      "caption": "床邊枱的圓角枱面及床頭軟墊",
+      "origin": "additional"
+    },
+    {
+      "src": "assets/gallery/gallery-detail-487490022.png",
+      "category": "detail",
+      "alt": "圓鏡、梳妝枱及弧形開放層架",
+      "title": "圓鏡、梳妝枱及弧形開放層架",
+      "caption": "圓鏡、梳妝枱及弧形開放層架",
+      "origin": "additional"
+    }
+  ]
+}

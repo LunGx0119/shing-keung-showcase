@@ -12,10 +12,11 @@ const filterButtons=[...document.querySelectorAll('[data-filter]')];
 const count=document.querySelector('#gallery-count');
 function setFilter(category,changeHistory=false){
   if(!gallery)return;
-  if(!filterButtons.some(b=>b.dataset.filter===category))category='全部';
+  const selected=filterButtons.find(b=>b.dataset.filter===category||b.dataset.filterAlias===category)||filterButtons.find(b=>b.dataset.filter==='全部');
+  category=selected.dataset.filter;
   filterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===category)));
   let n=0;gallery.querySelectorAll('[data-category]').forEach(card=>{const show=category==='全部'||card.dataset.category===category;card.hidden=!show;if(show)n++;});
-  count.textContent=`${category==='全部'?'全部':category} · ${n} ${gallery.classList.contains('catalog')?'款':'張相片'}`;
+  count.textContent=`${selected.textContent.trim()} · ${n} ${gallery.classList.contains('catalog')?'款':'張相片'}`;
   if(changeHistory){const url=new URL(location.href);if(category==='全部')url.searchParams.delete('category');else url.searchParams.set('category',category);history.pushState({},'',url);}
 }
 filterButtons.forEach(b=>b.addEventListener('click',()=>setFilter(b.dataset.filter,true)));
@@ -30,11 +31,29 @@ const viewerCount=lightbox.querySelector('.lightbox-count');
 const inquiry=lightbox.querySelector('.lightbox-inquiry');
 const previous=lightbox.querySelector('[data-previous]');
 const next=lightbox.querySelector('[data-next]');
-let visiblePhotos=[],photoIndex=0,originButton=null;
+const viewerStage=lightbox.querySelector('.lightbox-image');
+const viewerStatus=document.createElement('p');
+viewerStatus.className='lightbox-status';viewerStatus.setAttribute('role','status');viewerStatus.setAttribute('aria-live','polite');viewerStatus.hidden=true;viewerStage.append(viewerStatus);
+viewerImage.decoding='async';
+let visiblePhotos=[],photoIndex=0,originButton=null,photoRequest=0;
 function showPhoto(index){
+ if(!visiblePhotos.length)return;
  photoIndex=(index+visiblePhotos.length)%visiblePhotos.length;
  const button=visiblePhotos[photoIndex];
- viewerImage.src=button.dataset.full;viewerImage.alt=button.dataset.title;
+ const request=++photoRequest;
+ viewerImage.hidden=true;viewerImage.removeAttribute('src');viewerImage.alt=button.dataset.title;
+ viewerStatus.textContent='相片載入中…';viewerStatus.hidden=false;viewerStage.setAttribute('aria-busy','true');
+ const loadingImage=new Image();loadingImage.decoding='async';
+ loadingImage.onload=async()=>{
+  if(typeof loadingImage.decode==='function'){try{await loadingImage.decode();}catch{}}
+  if(request!==photoRequest)return;
+  viewerImage.src=loadingImage.src;viewerImage.hidden=false;viewerStatus.hidden=true;viewerStage.setAttribute('aria-busy','false');
+ };
+ loadingImage.onerror=()=>{
+  if(request!==photoRequest)return;
+  viewerStatus.textContent='相片暫時無法載入，請稍後再試，或查看其他相片。';viewerStage.setAttribute('aria-busy','false');
+ };
+ loadingImage.src=button.dataset.full;
  viewerTitle.textContent=button.dataset.title;viewerCaption.textContent=button.dataset.caption;
  viewerCount.textContent=`${photoIndex+1} / ${visiblePhotos.length}`;
  inquiry.href=`https://wa.me/85291568082?text=${encodeURIComponent('Anson，你好！我想查詢「'+button.dataset.title+'」的設計／工程。')}`;
@@ -51,7 +70,7 @@ function closeViewer(){lightbox.close();originButton?.focus({preventScroll:true}
 lightbox.querySelector('[data-close]').addEventListener('click',closeViewer);
 lightbox.addEventListener('click',e=>{if(e.target===lightbox){const r=lightbox.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeViewer();}});
 lightbox.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){e.preventDefault();showPhoto(photoIndex-1);}if(e.key==='ArrowRight'){e.preventDefault();showPhoto(photoIndex+1);}if(e.key==='Escape'){e.preventDefault();closeViewer();}});
-lightbox.addEventListener('close',()=>{if(lightbox.open)return;viewerImage.removeAttribute('src');originButton?.focus({preventScroll:true});});
+lightbox.addEventListener('close',()=>{if(lightbox.open)return;photoRequest++;viewerImage.hidden=true;viewerImage.removeAttribute('src');viewerStatus.hidden=true;viewerStage.setAttribute('aria-busy','false');touchStart=null;originButton?.focus({preventScroll:true});});
 let touchStart=null;
 viewerImage.addEventListener('touchstart',e=>{touchStart={x:e.changedTouches[0].clientX,y:e.changedTouches[0].clientY};},{passive:true});
 viewerImage.addEventListener('touchend',e=>{if(!touchStart)return;const dx=e.changedTouches[0].clientX-touchStart.x,dy=e.changedTouches[0].clientY-touchStart.y;if(Math.abs(dx)>65&&Math.abs(dx)>Math.abs(dy)*1.5)showPhoto(photoIndex+(dx<0?1:-1));touchStart=null;},{passive:true});
