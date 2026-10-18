@@ -1,0 +1,23 @@
+/* The six style detail pages only; the shared gallery and furniture viewer stay unchanged. */
+.style-series #photo-viewer .lightbox-inner { min-width: 0; }
+.style-series #photo-viewer .lightbox-bar { position: sticky; top: 0; z-index: 2; background: #151817; padding-bottom: 8px; gap: 10px; }
+.style-series #photo-viewer .lightbox-count { min-width: 0; overflow-wrap: anywhere; line-height: 1.6; }
+.style-series #photo-viewer .lightbox-bar > button { flex-shrink: 0; }
+.style-series #photo-viewer .series-viewer-navigation { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px 18px; padding: 12px 0; }
+.style-series #photo-viewer .series-viewer-navigation p { min-width: 0; margin: 0; line-height: 1.7; font-size: .875rem; overflow-wrap: anywhere; }
+.style-series #photo-viewer .series-viewer-navigation strong { display: block; color: var(--gold); font-size: 1.125rem; }
+.style-series #photo-viewer .series-viewer-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; min-width: 0; }
+.style-series #photo-viewer .icon-button { min-width: 48px; min-height: 48px; padding: 8px 16px; line-height: 1.5; white-space: normal; touch-action: manipulation; }
+.style-series #photo-viewer .series-viewer-buttons > button { width: 100%; }
+.style-series #photo-viewer .series-viewer-suite-navigation { border-bottom: 1px solid var(--line); margin-bottom: 14px; padding-top: 0; }
+.style-series #photo-viewer .lightbox-meta { grid-template-columns: minmax(0, 1fr); }
+.style-series #photo-viewer .lightbox-meta h2, .style-series #photo-viewer .lightbox-meta p { overflow-wrap: anywhere; }
+.style-series #photo-viewer .series-viewer-room-navigation { border-top: 1px solid var(--line); margin-top: 16px; }
+.style-series #photo-viewer .lightbox-inquiry { max-width: 100%; white-space: normal; overflow-wrap: anywhere; margin-top: 8px; }
+@media (max-width: 620px) {
+  .style-series #photo-viewer .series-viewer-navigation { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .style-series #photo-viewer .series-viewer-suite-navigation { margin-bottom: 12px; }
+  .style-series #photo-viewer .series-viewer-navigation strong { font-size: 1.0625rem; }
+  .style-series #photo-viewer .lightbox-image img { max-height: 48dvh; }
+  .style-series #photo-viewer .icon-button { padding-inline: 12px; }
+}
